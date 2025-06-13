@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payal Verma's Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
@@ -19,14 +17,14 @@
     z-index: 1100;
     width: 40px;
     height: 40px;
-    background: rgba(79, 27, 88, 0.1);
+    background: rgba(255,255,255,0.1);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     transition: all 0.3s ease;
-    border: 1px solid rgba(66, 9, 69, 0.2);
+    border: 1px solid rgba(255,255,255,0.2);
 }
 
 .menu-icon i {
@@ -40,7 +38,7 @@
     right: -300px;
     width: 200px;
     height: 100vh;
-    background: rgba(126, 16, 211, 0.1);
+    background: rgba(37, 117, 252, 0.1);
     backdrop-filter: blur(15px);
     z-index: 1000;
     transition: right 0.3s ease;
@@ -75,7 +73,7 @@
     display: inline-block;
     margin-top: 10px;
     padding: 10px 20px;
-    background: linear-gradient(45deg, #0798e1 0%, #ffffff 100%);
+    background: linear-gradient(45deg, #9204de 0%, #25132b 100%);
     color: #ffffff;
     text-decoration: none;
     border-radius: 25px;
@@ -91,12 +89,12 @@
 
 /* Light Mode Resume Button */
 body.light-mode .resume-btn {
-    background: linear-gradient(45deg, #7f3ebb 0%, #c07acf 100%);
+    background: linear-gradient(45deg, #3498db 0%, #2ecc71 100%);
     color: #ffffff;
 }
 
 body.light-mode .resume-btn:hover {
-    box-shadow: 0 4px 6px rgba(149, 112, 197, 0.2);
+    box-shadow: 0 4px 6px rgba(52, 152, 219, 0.2);
 }
 /* Light Mode Styles */
 body.light-mode .menu-icon {
@@ -124,8 +122,8 @@ body.light-mode .menu-item:hover {
             margin: 0;
             padding: 0;
             font-family: 'Xanh Mono', monospace;
-            background-color: #301246;
-            color: #702b8e;
+            background-color: #3d2078;
+            color: #eaeaea;
         }
         .loading-container {
             display: flex;
@@ -133,7 +131,7 @@ body.light-mode .menu-item:hover {
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #c294dd;
+            background-color: #080500;
             text-align: center;
             animation: fade-in 1s ease-in-out;
         }
@@ -295,7 +293,7 @@ body.light-mode .menu-item:hover {
         .progress-bar {
             height: 100%;
             border-radius: 15px;
-            background: linear-gradient(45deg, #deb0ea 0%, #6e0a95 100%);
+            background: linear-gradient(45deg, #00c0d9 0%, #1a2e89 100%);
             position: absolute;
             top: 0;
             left: 0;
@@ -462,7 +460,7 @@ body.light-mode .menu-item:hover {
         justify-content: center;
         gap: 10px;
         width: 100%;
-        background: linear-gradient(45deg, #deb0ea 0%, #6e0a95 100%);
+        background: linear-gradient(45deg, #a661e3 0%, #ffffff 100%);
         color: #ffffff;
         padding: 15px;
         border: none;
@@ -525,10 +523,11 @@ body.light-mode .menu-item:hover {
             transition: all 0.3s ease;
             border: 1px solid rgba(255,255,255,0.2);
         }
+        
         .theme-toggle-circle {
             width: 25px;
             height: 25px;
-            background: linear-gradient(45deg, #deb0ea 0%, #6e0a95 100%);
+            background: linear-gradient(45deg, #be65fa 0%, #ffffff 100%);
             border-radius: 50%;
             position: absolute;
             transition: all 0.3s ease;
@@ -538,7 +537,6 @@ body.light-mode .menu-item:hover {
             color: #ffffff;
             font-size: 14px;
         }
-
         
         .theme-toggle-circle.light {
             transform: translateX(0);
@@ -711,29 +709,9 @@ body.light-mode .menu-item:hover {
     </style>
 </head>
 <body>
-    <!-- Menu Toggle Button -->
-<div class="menu-icon" id="menu-toggle">
-  <i class="fas fa-bars"></i>
-</div>
-
-<!-- Dropdown Menu -->
-<div class="menu-dropdown" id="menu">
-  <div class="menu-content">
-    <a href="#home" class="menu-item">Home</a>
-    <a href="#about" class="menu-item">About</a>
-    <a href="#projects" class="menu-item">Projects</a>
-    <a href="#contact" class="menu-item">Contact</a>
-  </div>
-</div>
-
-<!-- Theme Toggle Button -->
-<div class="theme-toggle" id="theme-toggle">
-  <div class="theme-toggle-circle" id="theme-toggle-circle">🌙</div>
-</div>
-
     <div class="loading-container" id="loading-page">
         <div class="chibi-circle">
-            <img src="./ghibli character.jpg" alt="Ghibli Character">
+            <img src="ghibli character.jpg" alt="Chibi Character">
         </div>
         <div class="loader" id="loader"></div>
         <div class="percentage" id="percentage">0%</div>
@@ -758,7 +736,7 @@ body.light-mode .menu-item:hover {
             <a href="#research-papers" class="menu-item">Research</a>
             <a href="#skills" class="menu-item">Skills</a>
             <a href="#contact" class="menu-item">Contact</a>
-            <a href="Resume - Payal Verma.pdf" target="_blank" class="resume-btn">
+            <a href="Divija Joshi Resume Main.pdf" target="_blank" class="resume-btn">
                 <i class="fas fa-file-download"></i> Resume
             </a>
 
@@ -788,7 +766,7 @@ I’m always excited to collaborate, learn, and create. Let’s connect and buil
                 </div>
             </div>
             
-            <div class="section" id="projects">
+             <div class="section" id="projects">
                 <h3>Projects</h3>
                 <div class="projects-grid">
                     <div class="project-item">
@@ -866,7 +844,14 @@ I’m always excited to collaborate, learn, and create. Let’s connect and buil
                         </div>
                     </div>
                     <div class="skill-item">
-                        <div class="skill-name">Data Anakysis</div>
+                        <div class="skill-name">Data visualization</div>
+                        <div class="progress-container">
+                            <div class="progress-bar" style="width: 0%" data-percent="65"></div>
+                            <div class="progress-text">85%</div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">C/C++</div>
                         <div class="progress-container">
                             <div class="progress-bar" style="width: 0%" data-percent="75"></div>
                             <div class="progress-text">75%</div>
@@ -883,7 +868,7 @@ I’m always excited to collaborate, learn, and create. Let’s connect and buil
                         <div class="skill-name">Frontend (HTML,CSS)</div>
                         <div class="progress-container">
                             <div class="progress-bar" style="width: 0%" data-percent="80"></div>
-                            <div class="progress-text">65%</div>
+                            <div class="progress-text">75%</div>
                         </div>
                     </div>
                     <div class="skill-item">
@@ -904,37 +889,36 @@ I’m always excited to collaborate, learn, and create. Let’s connect and buil
                             <p class="contact-title">Let's Collaborate</p>
                             <p class="contact-description">Have a project in mind or just want to say hello? Feel free to reach out. I'm always excited to discuss new opportunities and innovations.</p>
                             <div class="direct-contact">
-                                <p><i class="fas fa-envelope"></i> payalvermaa21@gmail.com</p>
+                                <p><i class="fas fa-envelope"></i> payalvermaa@gmail.com</p>
                             </div>
                         </div>
-                        <form action="https://formcarry.com/s/UIIZF8WxV69" method="POST" class="contact-form">
-  <div class="form-group">
-    <div class="input-wrapper">
-      <i class="fas fa-user input-icon"></i>
-      <input type="text" name="name" placeholder="Your Name" required>
-    </div>
-  </div>
-
-  <div class="form-group">
-    <div class="input-wrapper">
-      <i class="fas fa-envelope input-icon"></i>
-      <input type="email" name="email" placeholder="Your Email" required>
-    </div>
-  </div>
-
-  <div class="form-group">
-    <div class="input-wrapper">
-      <i class="fas fa-comment input-icon"></i>
-      <textarea name="message" placeholder="Your Message" required></textarea>
-    </div>
-  </div>
-
-  <button type="submit" class="submit-btn">
-    <span>Send Message</span>
-    <i class="fas fa-paper-plane"></i>
-  </button>
-</form>
-
+                        <form class="contact-form" id="contact-form" action="https://formcarry.com/s/UIIZF8WxV69" 
+                        method="POST" >
+                            <div class="form-group">
+                                <div class="input-wrapper">
+                                    <i class="fas fa-user input-icon"></i>
+                                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-wrapper">
+                                    <i class="fas fa-envelope input-icon"></i>
+                                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-wrapper">
+                                    <i class="fas fa-comment input-icon"></i>
+                                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                                </div>
+                            </div>
+                            <button type="submit" class="submit-btn">
+                                <span>Send Message</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                            <div id="success-message" class="message success-message" style="display:none;">
+                                <i class="fas fa-check-circle"></i>Message sent successfully!
+                            </div>
                             <div id="error-message" class="message error-message" style="display:none;">
                                 <i class="fas fa-times-circle"></i>Error sending message. Please try again.
                             </div>
@@ -1073,4 +1057,4 @@ document.addEventListener('click', (event) => {
 });
     </script>
 </body>
-</html>    
+</html>
