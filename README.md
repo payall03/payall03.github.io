@@ -37,7 +37,7 @@ This portfolio highlights my journey, achievements, and selected work.
 
 📫 Contact - payalvermaa21@gmail.com
 
-🌐 Portfolio - https://payall03.github.io
+🌐 Portfolio - https://euphonious-haupia-c93a3c.netlify.app/
 
 🐙 GitHub - https://github.com/payall03
 
