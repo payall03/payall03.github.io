@@ -3,7 +3,7 @@
 Welcome to my **personal portfolio website**, created to showcase my skills, projects, and background as an AI Engineer and Web Developer.  
 This site is built using modern web technologies with a smooth, animated design to give a strong first impression.
 
-🔗 **Live Website**: [https://payall03.github.io]
+🔗 **Live Website**: [https://euphonious-haupia-c93a3c.netlify.app/]
 ---
 
 ## ✨ Features
