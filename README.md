@@ -26,14 +26,7 @@ This site is built using modern web technologies with a smooth, animated design 
 - **Git & GitHub**
 - **GitHub Pages** (for deployment)
 
----
-
-## 🚀 Getting Started (For Developers)
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/payall03/payall03.github.io.git
-   
+---  
 
 
 
